@@ -5,6 +5,7 @@ import Landing from "./Components/Views/Landing";
 import Home from "./Components/Views/Home";
 import Profile from "./Components/Pages/Profile";
 import Login from "./Components/Pages/Login";
+import Event from "./Components/Pages/Event";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/event" element={<Event />} />
       </Routes>
     </Router>
   );
