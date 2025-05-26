@@ -2,6 +2,11 @@
 import React, { useState } from "react";
 import SideBarL from "../Pages/SideBarL";
 import HeaderProfile from "./HeaderProfile";
+import Followers from "./Followers";
+import Comment from "./Comment";
+import Followed from "./Followed";
+import EventPosted from "./EventPosted";
+import PostProfile from "./PostProfile";
 
 
 const Profile = () => {
@@ -47,43 +52,35 @@ const Profile = () => {
         </button>
       ))}
         </div>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
-        <section className="mt-10 mb-10">
-          <div className="bg-gray-200 p-8 rounded-xl text-gray-500 text-lg">
-            <h2>Publicacion</h2>
-          </div>
-        </section>
+       {activeTab === "publicaciones" && (
+  <>
+    <section className="mt-2 mb-2">
+      <Comment />
+    </section>
+    <section className="mt-2 mb-2">
+      <PostProfile />
+    </section>
+  </>
+)}
 
+{activeTab === "seguidores" && (
+  <section className="mt-2 mb-2">
+    <Followers />
+  </section>
+)}
 
+{activeTab === "seguidos" && (
+  <section className="mt-2 mb-2">
+    <Followed />
+  </section>
+)}
+{activeTab === "eventos" && (
+  <>
+    <section className="mt-2 mb-2">
+      <EventPosted />
+    </section>
+  </>
+)}
       </main>
       <div className="bg-gray-100 lg:col-span-1">
 

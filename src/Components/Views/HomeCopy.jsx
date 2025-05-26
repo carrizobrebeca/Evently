@@ -1,17 +1,19 @@
 
 import React, { useState } from "react";
-import SideBarL from "../Pages/SideBarL";
+
 import Header from "../Pages/Header";
 import SideBarR from "../Pages/SideBarR";
 import NavBar from "../Pages/NavBar";
 import Post from "../Pages/Post";
+import SideBarLMin from "../Pages/SideBarLMin";
 
-const Home = () => {
+const HomeCopy = () => {
     const [activeTab, setActiveTab] = useState("posts");
+    
   return (
     <div className="bg-gray-200 grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen bg-gray-200">
       <div className="lg:col-span-1">
-        <SideBarL />
+        <SideBarLMin />
       </div>
       <main className="lg:col-span-2 xl:col-span-4 bg-gray-100 p-8 h-auto overflow">
         <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
@@ -43,4 +45,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeCopy;

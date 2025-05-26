@@ -13,7 +13,7 @@ const Login = () => {
         console.log('Login Failed');
       }}
     />
-    <button onClick={() => navigate("/profile")}>
+    <button onClick={() => navigate("/home")}>
 Ingresar
     </button>
     </div>

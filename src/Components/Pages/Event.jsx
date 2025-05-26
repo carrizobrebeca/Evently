@@ -3,6 +3,7 @@ import SideBarL from "./SideBarL";
 import HeaderEvent from "./HeaderEvent";
 import Comment from "./Comment";
 import PostEvent from "./PostEvent";
+import Members from "./Members";
 
 const Event = () => {
   const [activeTab, setActiveTab] = useState("publicaciones");
@@ -71,12 +72,23 @@ const Event = () => {
             </button>
           ))}
         </div>
+      
+       {activeTab === "publicaciones" && (
+  <>
+    <section className="mt-2 mb-2">
+      <Comment />
+    </section>
+    <section className="mt-2 mb-2">
+      <PostEvent />
+    </section>
+  </>
+)}
 
-        <Comment />
-
-        <section className="mt-10 mb-10">
-          <PostEvent />
-        </section>
+{activeTab === "participantes" && (
+  <section className="mt-2 mb-2">
+    <Members />
+  </section>
+)}
       </main>
       <div className="bg-gray-100 lg:col-span-1"></div>
     </div>

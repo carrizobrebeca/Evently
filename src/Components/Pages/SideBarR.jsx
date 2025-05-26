@@ -1,10 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const SideBarR = () => {
+      const navigate = useNavigate();
   return (
     <>
-      <div className="bg-gray-100 h-full fixed right-0 lg:static w-[80%] md:w-[40%] lg:w-full transition-all z-50 duration-300">
-        <div className="flex items-left justify-start p-10 h-[10vh]">
+      <div className="bg-gray-100 h-full fixed right-0 lg:static w-[80%] md:w-[40%] lg:w-full transition-all cursor-pointer z-50 duration-300">
+        <div onClick={() => navigate("/profile")} className="flex items-left justify-start p-10 h-[10vh]">
           <img
             src=
             "https://w7.pngwing.com/pngs/857/213/png-transparent-man-avatar-user-business-avatar-icon.png"

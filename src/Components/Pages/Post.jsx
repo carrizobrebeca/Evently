@@ -1,11 +1,12 @@
 import React from 'react'
 import post from "../../assets/post.PNG";
+import { useNavigate } from 'react-router-dom';
+
 const Post = () => {
+  const navigate = useNavigate();
     return (
         <div className="flex flex-col items-center justify-center">
-     
             <div className="flex items-start justify-between gap-4 w-full max-w-md px-4 py-2">
-       
                 <img
                     src="https://w7.pngwing.com/pngs/857/213/png-transparent-man-avatar-user-business-avatar-icon.png"
                     className="w-16 h-16 object-cover rounded-full"
@@ -15,19 +16,14 @@ const Post = () => {
                     <h2 className="text-gray-600 font-bold font-mono">Nombre</h2>
                     <h3 className="text-gray-400 font-mono text-sm">Lugar</h3>
                 </div>
-
-
                 <div className="ml-auto">
                     <h3 className="text-gray-400 text-sm">Fecha</h3>
-                    <h3 className="text-gray-400 text-sm">Evento</h3>
+                    <button  onClick={() => navigate("/event")} className="text-gray-400 text-sm">Evento</button >
                 </div>
             </div>
-
             <div className="w-full max-w-md px-4">
                 <img className="w-full object-cover rounded-lg" src={post} alt="post" />
             </div>
-
-
             <div className="flex items-center gap-6 text-gray-700 py-4 px-4">
                 <button className="text-xl text-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">

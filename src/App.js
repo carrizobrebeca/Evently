@@ -6,6 +6,10 @@ import Home from "./Components/Views/Home";
 import Profile from "./Components/Pages/Profile";
 import Login from "./Components/Pages/Login";
 import Event from "./Components/Pages/Event";
+import PostMax from "./Components/Pages/PostMax";
+import HomeCopy from "./Components/Views/HomeCopy";
+import SendMessage from "./Components/Pages/SendMessage";
+
 
 function App() {
   return (
@@ -16,6 +20,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/event" element={<Event />} />
+         <Route path="/postmax" element={<PostMax />} />
+         <Route path="/prueba" element={<HomeCopy />} />
+         <Route path="/sendmessage" element={<SendMessage />} />
       </Routes>
     </Router>
   );

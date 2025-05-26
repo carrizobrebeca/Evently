@@ -71,12 +71,8 @@ const HeaderEvent = () => {
         <div className="flex justify-between p-4">
           <h2><span className="font-bold">259 </span>publicaciones</h2>
           <h2><span className="font-bold">259 </span>participantes</h2>
-
-
         </div>
-
       </form>
-
     </header>
   );
 };

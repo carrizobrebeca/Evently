@@ -43,9 +43,9 @@ const Comment = () => {
           />
 
           <input
-            className="rounded-full text-lg bg-gray-300 px-4 py-2 w-auto min-w-[500px]"
+            className="rounded-full text-lg bg-gray-300 px-4 py-2 w-auto min-w-[850px]"
             type="text"
-            placeholder="Qué está pasando?  "
+            placeholder="Qué está pasando?"
           />
         </div>
         <div className="border-2 border-gray-300"></div>

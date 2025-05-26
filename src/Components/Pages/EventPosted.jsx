@@ -1,19 +1,12 @@
 import React from "react";
 import post from "../../assets/post.PNG";
-const PostEvent = () => {
+const EventPosted = () => {
   return (
     <div className="flex flex-row md:flex-row items-center justify-between gap-4 pt-6 pb-6">
       <form className="w-full p-10 bg-gray-100 rounded-3xl">
-        <div className="flex justify-between p-4">
-          <img
-            src="https://w7.pngwing.com/pngs/857/213/png-transparent-man-avatar-user-business-avatar-icon.png"
-            className="w-10 h-10 object-cover rounded-full "
-          />
-          <h2 className="text-gray-800 text-bold">Nombre</h2>
-          <h2 className="text-gray-600 text-bold">Usuario</h2>
-          <h2 className="text-gray-600 text-bold">Fecha</h2>
-        </div>
+      
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex numquam voluptatum corrupti ut quibusdam amet laboriosam voluptatem aspernatur, deleniti quos sed delectus architecto officiis laborum, perspiciatis repellat dolorum facere iste!</p>
+          <h2 className="text-gray-600 text-bold">Fecha</h2>
         <div className="w-full max-w-md mx-auto object-cover px-4">
           <img className="rounded-lg" src={post} alt="post" />
         </div>
@@ -68,4 +61,4 @@ const PostEvent = () => {
   );
 };
 
-export default PostEvent;
+export default EventPosted;
